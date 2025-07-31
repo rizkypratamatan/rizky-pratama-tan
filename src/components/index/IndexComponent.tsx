@@ -31,7 +31,7 @@ export default function IndexComponent() {
                             <div className="service">
                                 <div className="service-top">
                                     <div>
-                                        <img src="./resources/images/service-1.png" alt="3D Modeling Icon" loading="lazy"/>
+                                        <img src="/resources/images/service-1.png" alt="3D Modeling Icon" loading="lazy"/>
                                     </div>
                                     <div>
                                         <span>2 Developers</span>
@@ -44,7 +44,7 @@ export default function IndexComponent() {
                             <div className="service">
                                 <div className="service-top">
                                     <div>
-                                        <img src="./resources/images/service-2.png" alt="3D Modeling Icon" loading="lazy"/>
+                                        <img src="/resources/images/service-2.png" alt="3D Modeling Icon" loading="lazy"/>
                                     </div>
                                     <div>
                                         <span>5 Developers</span>
@@ -57,7 +57,7 @@ export default function IndexComponent() {
                             <div className="service">
                                 <div className="service-top">
                                     <div>
-                                        <img src="./resources/images/service-3.png" alt="3D Modeling Icon" loading="lazy"/>
+                                        <img src="/resources/images/service-3.png" alt="3D Modeling Icon" loading="lazy"/>
                                     </div>
                                     <div>
                                         <span>3 Developers</span>
@@ -70,7 +70,7 @@ export default function IndexComponent() {
                             <div className="service">
                                 <div className="service-top">
                                     <div>
-                                        <img src="./resources/images/service-4.png" alt="3D Modeling Icon" loading="lazy"/>
+                                        <img src="/resources/images/service-4.png" alt="3D Modeling Icon" loading="lazy"/>
                                     </div>
                                     <div>
                                         <span>4 Developers</span>

@@ -11,7 +11,7 @@ import {
     IconSun,
     IconUserCode
 } from "@tabler/icons-react";
-import {Outlet} from "react-router";
+import {Link, Outlet} from "react-router";
 import {TypeAnimation} from "react-type-animation";
 
 
@@ -52,11 +52,11 @@ export default function LayoutComponent() {
                         </div>
                         <nav className="bg-gradient header-container">
                             <ul className="main-menu">
-                                <li><a className="active" href="#"><IconUserCode/><span>About</span></a></li>
-                                <li><a href="#"><IconBuildingBank/><span>Resume</span></a></li>
-                                <li><a href="#"><IconBriefcaseFilled/><span>Projects</span></a></li>
-                                <li><a href="#"><IconArticleFilled/><span>Articles</span></a></li>
-                                <li><a href="#"><IconBrandTelegram/><span>Contact</span></a></li>
+                                <li><Link className="active" to="/"><IconUserCode/><span>About</span></Link></li>
+                                <li><Link to="/resume/"><IconBuildingBank/><span>Resume</span></Link></li>
+                                <li><Link to="/projects/"><IconBriefcaseFilled/><span>Projects</span></Link></li>
+                                <li><Link to="/articles/"><IconArticleFilled/><span>Articles</span></Link></li>
+                                <li><Link to="/contact/"><IconBrandTelegram/><span>Contact</span></Link></li>
                             </ul>
                         </nav>
                     </header>
@@ -64,7 +64,7 @@ export default function LayoutComponent() {
                         <div className="bg-gradient relative bg-bgl-primary dark:bg-bgd-primary rounded-tl-[2rem] rounded-br-[2rem] before:rounded-tr-none before:rounded-bl-none">
                             <div className="relative flex flex-col gap-[1rem]">
                                 <div className="basis-[17.438rem] pt-[2.5rem] px-[2.5rem] aspect-square">
-                                    <img className="img-responsive mx-auto" src="./resources/images/face-1.jpg" alt="Profile Picture" loading="lazy"/>
+                                    <img className="img-responsive mx-auto" src="/resources/images/face-1.jpg" alt="Profile Picture" loading="lazy"/>
                                 </div>
                                 <div className="typed">
                                     <TypeAnimation
