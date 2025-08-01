@@ -22,8 +22,8 @@ export default function IndexComponent() {
                         <h3 className="stats"><span className="text-white">10</span><span>Years of Experience</span></h3>
                     </section>
                     <section>
-                        <div className="flex gap-[0.625rem] items-center w-[8.563rem] py-[0.625rem] px-[1.25rem] border border-border-rgba-white rounded-[2rem]">
-                            <span><IconSettingsCode/></span>
+                        <div className="title-bullet w-[8.625rem]">
+                            <span><IconSettingsCode size={'1rem'}/></span>
                             <p>Services</p>
                         </div>
                         <h2 className="pt-[0.625rem] pb-[1.875rem] text-[2.375rem] font-semibold text-white">What Services I Provide ?</h2>
