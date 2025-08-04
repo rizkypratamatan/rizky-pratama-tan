@@ -11,6 +11,7 @@
     --color-border-rgba-white: rgba(255, 255, 255, 0.12);
     --color-primary: #ff4191;
     --color-secondary: #007aff;
+    --color-black-light: #666;
     --color-dark: #282828;
     --color-rgba-white: rgba(255, 255, 255, 0.85);
     --color-rgba-white-dark: rgba(255, 255, 255, 0.55);
@@ -202,7 +203,7 @@
     }
 
     body {
-        @apply bg-bgl-secondary dark:bg-bgd-secondary dark:text-rgba-white font-poppins;
+        @apply bg-bgl-secondary dark:bg-bgd-secondary dark:text-rgba-white font-poppins text-[0.875rem];
     }
 
     svg {
@@ -505,7 +506,7 @@
     }
 
     .title-bullet {
-        @apply flex gap-[0.625rem] items-center py-[0.625rem] px-[1.25rem] border border-border-rgba-white rounded-[2rem] leading-[0.938rem] text-[0.875rem] uppercase;
+        @apply flex gap-[0.625rem] items-center py-[0.625rem] px-[1.25rem] border border-border-rgba-white rounded-[2rem] leading-[0.938rem] text-center uppercase;
     }
 
     header {
@@ -591,7 +592,7 @@
     }
 
     .typed {
-        @apply h-[2.125rem] px-[2.5rem] leading-[2.125rem] text-[0.875rem] font-normal tracking-[0.125rem] text-center uppercase;
+        @apply h-[2.125rem] px-[2.5rem] leading-[2.125rem] font-normal tracking-[0.125rem] text-center uppercase;
         animation-duration: calc(0.9s * 1.3);
         animation-iteration-count: infinite;
         animation-name: cglitched;
@@ -631,7 +632,7 @@
     }
 
     .stats span:last-child {
-        @apply basis-[6.25rem] leading-[1.5] text-[0.875rem];
+        @apply basis-[6.25rem] leading-[1.5];
     }
 
     .contact {
@@ -645,7 +646,7 @@
     }
 
     .contact a {
-        @apply relative basis-1/2 leading-[4.375rem] text-[0.875rem] font-semibold text-center;
+        @apply relative basis-1/2 leading-[4.375rem] font-semibold text-center;
     }
 
     .contact a:first-child:before {
@@ -665,7 +666,7 @@
     }
 
     .service a {
-        @apply text-[0.875rem] text-white uppercase underline;
+        @apply text-white uppercase underline;
     }
 
     .service-top {
@@ -696,5 +697,108 @@
     .experience-line:before {
         @apply relative block w-[0.625rem] h-[0.625rem] bg-primary mt-[-0.313rem] mx-auto rounded-full;
         content: '';
+    }
+
+    .resume-column {
+        @apply basis-1/2 flex flex-col gap-[1.25rem];
+    }
+
+    .resume-column-container {
+        @apply relative flex flex-col gap-[1.875rem] pl-[0.938rem];
+    }
+
+    .resume-column-container:before {
+        @apply absolute top-[1.875rem] bottom-[1.875rem] left-0 w-[0.063rem] bg-black-light;
+        content: '';
+    }
+
+    .certification {
+        @apply relative flex flex-col gap-[0.625rem] p-[1.25rem] border border-border-rgba-white rounded-[1rem];
+    }
+
+    .certification:before {
+        @apply absolute top-[1.625rem] left-[-1.25rem] w-[0.563rem] h-[0.563rem] bg-black-light rounded-full;
+        content: '';
+    }
+
+    .certification div p {
+        @apply inline-block px-[0.313rem] border border-black-light rounded-[0.25rem] text-[0.813rem] text-black-light;
+    }
+
+    .certification div button {
+        @apply font-semibold uppercase;
+    }
+
+    .certification div button svg {
+        @apply mt-[-0.063rem];
+    }
+
+    .technology {
+        @apply relative flex flex-col gap-[1.875rem] p-[1.875rem] border border-border-rgba-white rounded-[1rem];
+        background: linear-gradient(120deg, rgba(255, 255, 255, .02), rgba(0, 0, 0, .2));
+    }
+
+    .technology-detail {
+        @apply flex gap-[1.875rem] items-center;
+    }
+
+    .technology-detail div {
+        @apply basis-[2.5rem];
+    }
+
+    .technology-detail h3 {
+        @apply text-[1.063rem] font-medium;
+    }
+
+    .technology-range {
+        @apply h-[0.188rem] bg-border-rgba-white rounded-[0.313rem];
+    }
+
+    .technology-range div {
+        @apply h-full rounded-[0.313rem] bg-white;
+    }
+
+    .technology p {
+        @apply absolute top-[0.625rem] right-[0.625rem] py-[0.188rem] px-[0.625rem] border border-bgd-rgba-white rounded-[1.875rem] text-[0.75rem];
+    }
+
+    .tool {
+        @apply flex flex-col gap-[0.625rem] p-[1.25rem] border border-border-rgba-white rounded-[1rem];
+        background: linear-gradient(120deg, rgba(255, 255, 255, .02), rgba(0, 0, 0, .2));
+    }
+
+    .tool-range {
+        @apply w-[6.25rem] h-[6.25rem] mx-auto bg-no-repeat;
+        background-position: center 38%;
+        background-size: 40% 40%;
+    }
+
+    .tool-range svg {
+        @apply w-full h-full;
+    }
+
+    svg path.cover-range {
+        @apply fill-none stroke-[0.125rem] stroke-border-rgba-white;
+    }
+
+    svg path.visible-range {
+        @apply fill-none stroke-[0.125rem] stroke-primary;
+        stroke-linecap: round;
+        stroke-dasharray: 100, 100;
+        transition: stroke-dashoffset 0.6s ease;
+    }
+
+    svg.tool-skill text.percentage {
+        @apply text-[0.313rem] fill-white;
+        text-anchor: middle;
+    }
+
+    svg.soft-skill text.percentage {
+        @apply text-[0.5rem] fill-white;
+        text-anchor: middle;
+    }
+
+    .tool h3 {
+        @apply leading-[1.25rem] text-center;
     }
 }
