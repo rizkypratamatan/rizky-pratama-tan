@@ -11,11 +11,49 @@ import {
     IconSun,
     IconUserCode
 } from "@tabler/icons-react";
-import {Link, Outlet} from "react-router";
+import {useEffect} from "react";
+import {Link, Outlet, useLocation} from "react-router";
 import {TypeAnimation} from "react-type-animation";
 
 
 export default function LayoutComponent() {
+    const location: any = useLocation();
+
+    useEffect((): any => {
+
+        const mainMenu: HTMLElement | null = document.getElementById('main-menu');
+
+        if(mainMenu !== null) {
+            const mainMenuItems: HTMLCollectionOf<HTMLElement> = (mainMenu.getElementsByTagName('a') as HTMLCollectionOf<HTMLElement>);
+
+            if(mainMenuItems.length > 0) {
+                Array.from(mainMenuItems).forEach(function(element: any) {
+                    const urls: string[] = [
+                        window.location.pathname,
+                        element.getAttribute("href")
+                    ];
+                    const validUrls: string[] =[];
+
+                    for(let url of urls) {
+                        if(url.endsWith("//")) {
+                            url = url.slice(0, -1);
+                        }
+
+                        validUrls.push(url);
+                    }
+
+                    console.log(validUrls);
+                    if(validUrls[0] === validUrls[1]) {
+                        element.classList.add("active");
+                    } else {
+                        element.classList.remove("active");
+                    }
+                });
+            }
+        }
+
+    }, [location]);
+
     return (
         <>
             <div className="fixed top-0 left-0 w-full h-full">
@@ -51,11 +89,11 @@ export default function LayoutComponent() {
                             <IconMoon className="inline dark:hidden relative top-[-0.125rem]"/>
                         </div>
                         <nav className="bg-gradient header-container">
-                            <ul className="main-menu">
+                            <ul id="main-menu">
                                 <li><Link className="active" to="/"><IconUserCode/><span>About</span></Link></li>
                                 <li><Link to="/resume/"><IconBuildingBank/><span>Resume</span></Link></li>
-                                <li><Link to="/projects/"><IconBriefcaseFilled/><span>Projects</span></Link></li>
-                                <li><Link to="/articles/"><IconArticleFilled/><span>Articles</span></Link></li>
+                                <li className="hidden"><Link to="/projects/"><IconBriefcaseFilled/><span>Projects</span></Link></li>
+                                <li className="hidden"><Link to="/articles/"><IconArticleFilled/><span>Articles</span></Link></li>
                                 <li><Link to="/contact/"><IconBrandTelegram/><span>Contact</span></Link></li>
                             </ul>
                         </nav>

@@ -2,8 +2,10 @@ import {
     IconBarbellFilled,
     IconBooks,
     IconBriefcaseFilled,
-    IconCertificate,
-    IconChevronRight, IconSettingsCode, IconUsersGroup
+    IconCertificate, IconCheck,
+    IconChevronRight, IconLanguage, IconList,
+    IconSettingsCode,
+    IconUsersGroup
 } from "@tabler/icons-react";
 import useEmblaCarousel from "embla-carousel-react";
 import {useEffect, useState} from "react";
@@ -305,7 +307,7 @@ export default function ResumeComponent() {
                                     <svg className="soft-skill" viewBox="0 0 36 36">
                                         <path className="cover-range" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                                         <path className="visible-range" style={{strokeDashoffset: 10}} d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                        <text className="percentage" x="18" y="22">90%</text>
+                                        <text className="percentage" x="18" y="21">90%</text>
                                     </svg>
                                 </div>
                                 <h3>Leadership</h3>
@@ -315,7 +317,7 @@ export default function ResumeComponent() {
                                     <svg className="soft-skill" viewBox="0 0 36 36">
                                         <path className="cover-range" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                                         <path className="visible-range" style={{strokeDashoffset: 25}} d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                        <text className="percentage" x="18" y="22">75%</text>
+                                        <text className="percentage" x="18" y="21">75%</text>
                                     </svg>
                                 </div>
                                 <h3>Critical Thinking</h3>
@@ -325,7 +327,7 @@ export default function ResumeComponent() {
                                     <svg className="soft-skill" viewBox="0 0 36 36">
                                         <path className="cover-range" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                                         <path className="visible-range" style={{strokeDashoffset: 15}} d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                        <text className="percentage" x="18" y="22">85%</text>
+                                        <text className="percentage" x="18" y="21">85%</text>
                                     </svg>
                                 </div>
                                 <h3>Mentorship</h3>
@@ -335,15 +337,81 @@ export default function ResumeComponent() {
                                     <svg className="soft-skill" viewBox="0 0 36 36">
                                         <path className="cover-range" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                                         <path className="visible-range" style={{strokeDashoffset: 5}} d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                                        <text className="percentage" x="18" y="22">95%</text>
+                                        <text className="percentage" x="18" y="21">95%</text>
                                     </svg>
                                 </div>
                                 <h3>Empathy</h3>
                             </div>
                         </div>
                     </section>
-                    <section className="flex flex-col gap-[0.938rem] pt-[5.625rem]">
-
+                    <section className="flex gap-[1.875rem] pt-[5.625rem] pb-[1.875rem]">
+                        <div className="resume-column">
+                            <div className="title-bullet w-[9.75rem]">
+                                <span><IconLanguage size={'1rem'}/></span>
+                                <p>Languages</p>
+                            </div>
+                            <div className="skill-column-container">
+                                <div className="language-item">
+                                    <div className="language-image">
+                                        <img src="/resources/images/united-kingdom.png" alt="United Kingdom Flag"/>
+                                    </div>
+                                    <div className="language-text">
+                                        <h3>English</h3>
+                                        <div className="language-rate">
+                                            <div>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-bgd-gray"></span>
+                                                <span className="bg-bgd-gray"></span>
+                                                <span className="bg-bgd-gray"></span>
+                                            </div>
+                                            <p>70%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="language-item">
+                                    <div className="language-image">
+                                        <img src="/resources/images/united-kingdom.png" alt="United Kingdom Flag"/>
+                                    </div>
+                                    <div className="language-text">
+                                        <h3>Bahasa</h3>
+                                        <div className="language-rate">
+                                            <div>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-primary"></span>
+                                                <span className="bg-bgd-gray"></span>
+                                            </div>
+                                            <p>90%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="resume-column">
+                            <div className="title-bullet w-[9.875rem]">
+                                <span><IconList size={'1rem'}/></span>
+                                <p>Soft Skills</p>
+                            </div>
+                            <div className="skill-column-container">
+                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Critical thinking and analytical skills</p>
+                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Strong problem-solving skills</p>
+                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Attention to detail</p>
+                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Creative Problem-Solving</p>
+                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Continuous Learning</p>
+                            </div>
+                        </div>
                     </section>
                 </div>
             </div>

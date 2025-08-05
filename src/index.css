@@ -2,6 +2,7 @@
 
 @theme {
     --color-bg-rgba-white: rgba(255, 255, 255, 0.01);
+    --color-bgd-gray: #3e4148;
     --color-bgd-primary: #0c0c0c;
     --color-bgd-rgba-white: rgba(255, 255, 255, 0.2);
     --color-bgd-secondary: #141414;
@@ -560,21 +561,24 @@
         color: var(--color-primary);
     }
 
-    .main-menu {
+    #main-menu {
         @apply py-[0.625rem];
     }
 
-    .main-menu a {
-        @apply relative block h-[3.125rem] w-[3.125rem] mx-auto my-[0.25rem] rounded-full leading-[2.938rem] text-center;
-        background: var(--color-bg-rgba-white);
+    #main-menu a {
+        @apply relative block h-[3.125rem] w-[3.125rem] mx-auto my-[0.25rem] bg-bg-rgba-white rounded-full leading-[2.938rem] text-center;
     }
 
-    .main-menu a:hover > svg,
-    .main-menu .active > svg {
-        color: var(--color-primary);
+    #main-menu a svg {
+        @apply duration-500;
     }
 
-    .main-menu a span {
+    #main-menu a:hover > svg,
+    #main-menu .active > svg {
+        @apply text-primary;
+    }
+
+    #main-menu a span {
         @apply absolute opacity-0 bg-primary h-[1.563rem] px-2 rounded-[0.625rem] leading-[1.563rem] text-[0.75rem] uppercase tracking-[0.075rem];
         color: var(--color-dark);
         left: 90%;
@@ -582,7 +586,7 @@
         transition: 0.3s ease 0s;
     }
 
-    .main-menu a:hover > span {
+    #main-menu a:hover > span {
         @apply opacity-100;
     }
 
@@ -794,11 +798,119 @@
     }
 
     svg.soft-skill text.percentage {
-        @apply text-[0.5rem] fill-white;
+        @apply text-[0.375rem] fill-white;
         text-anchor: middle;
     }
 
     .tool h3 {
         @apply leading-[1.25rem] text-center;
+    }
+
+    .skill-column-container {
+        @apply flex flex-col gap-[0.625rem] py-[1.25rem];
+    }
+
+    .language-item {
+        @apply flex gap-[1.25rem] items-center;
+    }
+
+    .language-image {
+        @apply basis-[3.75rem] p-[0.938rem] bg-bg-rgba-white border border-border-rgba-white rounded-[1rem];
+    }
+
+    .language-image img {
+        @apply w-[2.5rem] h-auto;
+    }
+
+    .language-text {
+        @apply flex flex-col gap-[0.313rem] grow;
+    }
+
+    .language-rate {
+        @apply flex gap-[1.25rem] items-center;
+    }
+
+    .language-rate div {
+        @apply flex gap-[0.625rem];
+    }
+
+    .language-rate div span {
+        @apply inline-block w-[0.938rem] h-[0.938rem] rounded-full;
+    }
+
+    .language-rate p {
+        @apply basis-[3.125rem] text-right;
+    }
+
+    .soft-skill-item {
+        @apply leading-[1rem];
+    }
+
+    .soft-skill-item svg {
+        @apply mr-[0.313rem] text-primary;
+    }
+
+    .contact-item {
+        @apply flex items-center px-[1.25rem] py-[1.875rem] border border-border-rgba-white rounded-[1rem];
+        background: linear-gradient(120deg, rgba(255, 255, 255, .02), rgba(0, 0, 0, .2));
+    }
+
+    .contact-item div {
+        @apply basis-[9.375rem] h-[2.5rem] leading-[2.5rem];
+    }
+
+    .contact-item div svg {
+        @apply h-full mt-[-0.188rem] mr-[1.25rem] fill-primary;
+    }
+
+    .contact-item div h3 {
+        @apply inline text-[1.063rem] text-rgba-white-dark;
+    }
+
+    .contact-item p {
+        @apply grow text-[1rem] text-right uppercase;
+    }
+
+    .contact-map {
+        @apply w-full h-[28.125rem];
+    }
+
+    .contact-form fieldset {
+        @apply grid grid-cols-2 gap-[1.875rem];
+    }
+
+    .contact-form fieldset input {
+        @apply h-[3.125rem] px-[0.938rem] border border-border-rgba-white rounded-[0.625rem] leading-[3.125rem] text-[1rem];
+        appearance: none;
+    }
+
+    .contact-form fieldset textarea {
+        @apply col-span-2 px-[0.938rem] border border-border-rgba-white rounded-[0.625rem] leading-[3.125rem] text-[1rem] resize-none;
+    }
+
+    .contact-form fieldset input:focus,
+    .contact-form fieldset textarea:focus {
+        @apply text-primary shadow-[none] outline-none;
+    }
+
+    .contact-form fieldset input::placeholder,
+    .contact-form fieldset textarea::placeholder {
+        @apply text-white;
+    }
+
+    .contact-form fieldset div button {
+        @apply h-[3.125rem] font-semibold uppercase cursor-pointer;
+    }
+
+    .contact-form fieldset div button svg {
+        @apply mb-[0.125rem] duration-200;
+    }
+
+    .contact-form fieldset div button:hover {
+        @apply text-primary;
+    }
+
+    .contact-form fieldset div button:hover svg {
+        @apply ml-[0.188rem];
     }
 }

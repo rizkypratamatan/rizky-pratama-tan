@@ -21,7 +21,7 @@ export default function IndexComponent() {
                         <h3 className="stats"><span className="text-white">5+</span><span>Programming Languages</span></h3>
                         <h3 className="stats"><span className="text-white">10</span><span>Years of Experience</span></h3>
                     </section>
-                    <section>
+                    <section className="pb-[1.875rem]">
                         <div className="title-bullet w-[8.625rem]">
                             <span><IconSettingsCode size={'1rem'}/></span>
                             <p>Services</p>
