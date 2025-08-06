@@ -511,12 +511,11 @@
     }
 
     header {
-        @apply flex flex-col gap-[0.5rem] basis-[4.125rem] mt-[8vh] z-50;
-        margin-top: calc(((100vh - 621px) / 2) + 2vh);
+        @apply fixed top-0 left-0 flex flex-row-reverse gap-[0.938rem] flex-wrap w-full bg-bgd-primary z-50 md:static md:basis-[4.125rem] md:flex-col md:gap-[0.5rem] md:bg-transparent;
     }
 
     .header-container {
-        @apply relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] text-center cursor-pointer;
+        @apply relative bg-bgl-primary dark:bg-bgd-primary text-center cursor-pointer;
     }
 
     .hamburger span {
@@ -562,7 +561,7 @@
     }
 
     #main-menu {
-        @apply py-[0.625rem];
+        @apply flex justify-between w-[18.75rem] py-[0.625rem] mx-auto md:block md:w-auto;
     }
 
     #main-menu a {
@@ -912,5 +911,11 @@
 
     .contact-form fieldset div button:hover svg {
         @apply ml-[0.188rem];
+    }
+
+    @media (width >= 48rem) {
+        header {
+            margin-top: calc(((100vh - 621px) / 2) + 2vh);
+        }
     }
 }

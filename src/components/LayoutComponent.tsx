@@ -32,7 +32,7 @@ export default function LayoutComponent() {
                         window.location.pathname,
                         element.getAttribute("href")
                     ];
-                    const validUrls: string[] =[];
+                    const validUrls: string[] = [];
 
                     for(let url of urls) {
                         if(url.endsWith("//")) {
@@ -81,19 +81,37 @@ export default function LayoutComponent() {
             <div className="flex gap-[1.5rem] relative w-[100rem] z-10 h-screen mx-auto">
                 <div className="flex basis-[27.5rem] gap-[0.875rem]">
                     <header>
-                        <div className="bg-gradient header-container hamburger h-[3.875rem] leading-[3.875rem]">
+                        <div className="header-container hamburger h-[3.875rem] rounded-[2rem] leading-[3.875rem] md:bg-gradient">
                             <span></span>
                         </div>
-                        <div className="bg-gradient header-container h-[3.875rem] leading-[3.875rem]">
+                        <div className="header-container h-[3.875rem] rounded-[2rem] leading-[3.875rem] md:bg-gradient">
                             <IconSun className="hidden dark:inline relative top-[-0.125rem]"/>
                             <IconMoon className="inline dark:hidden relative top-[-0.125rem]"/>
                         </div>
-                        <nav className="bg-gradient header-container">
+                        <div className="grow pl-[1.125rem] py-[0.625rem] md:hidden">
+                            <h1 className="leading-[1.438rem] text-[0.938rem] font-semibold">Rizky Pratama</h1>
+                            <p className="leading-[1.031rem] text-[0.75rem] text-primary">
+                                <TypeAnimation
+                                    cursor={false}
+                                    sequence={[
+                                        'Rust Programmer', 1000,
+                                        'React Programmer', 1000,
+                                        'Python Programmer', 1000,
+                                        'Javascript Programmer', 1000,
+                                        'Java Programmer', 1000,
+                                        'IOT Developer', 1000,
+                                    ]} speed={50} repeat={Infinity}
+                                />
+                            </p>
+                        </div>
+                        <nav className="bg-gradient header-container w-full md:static md:w-auto md:rounded-[2rem]">
                             <ul id="main-menu">
                                 <li><Link className="active" to="/"><IconUserCode/><span>About</span></Link></li>
                                 <li><Link to="/resume/"><IconBuildingBank/><span>Resume</span></Link></li>
-                                <li className="hidden"><Link to="/projects/"><IconBriefcaseFilled/><span>Projects</span></Link></li>
-                                <li className="hidden"><Link to="/articles/"><IconArticleFilled/><span>Articles</span></Link></li>
+                                <li className="hidden"><Link to="/projects/"><IconBriefcaseFilled/><span>Projects</span></Link>
+                                </li>
+                                <li className="hidden">
+                                    <Link to="/articles/"><IconArticleFilled/><span>Articles</span></Link></li>
                                 <li><Link to="/contact/"><IconBrandTelegram/><span>Contact</span></Link></li>
                             </ul>
                         </nav>
