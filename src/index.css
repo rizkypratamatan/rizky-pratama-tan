@@ -507,7 +507,11 @@
     }
 
     .title-bullet {
-        @apply flex gap-[0.625rem] items-center py-[0.625rem] px-[1.25rem] border border-border-rgba-white rounded-[2rem] leading-[0.938rem] text-center uppercase;
+        @apply flex gap-[0.625rem] justify-center items-center px-[0.625rem] py-[0.438rem] border border-border-rgba-white rounded-[2rem] leading-[0.938rem] text-center uppercase md:px-[1.25rem] md:py-[0.625rem];
+    }
+
+    .title-bullet p {
+        @apply text-[0.813rem] md:text-[0.875rem];
     }
 
     header {
@@ -590,8 +594,7 @@
     }
 
     .sidebar {
-        @apply basis-[22.5rem];
-        margin-top: calc((100vh - 621px) / 2);
+        @apply basis-full mt-[10.875rem] md:basis-[22.5rem];
     }
 
     .typed {
@@ -627,11 +630,11 @@
     }
 
     .stats {
-        @apply flex gap-[1.25rem] items-center;
+        @apply basis-1/2 flex gap-[1.25rem] items-center md:basis-auto;
     }
 
     .stats span:first-child {
-        @apply leading-[4.688rem] text-[3.75rem];
+        @apply leading-[4.688rem] text-[2.5rem] md:text-[3.75rem];
     }
 
     .stats span:last-child {
@@ -659,12 +662,11 @@
     }
 
     .content {
-        @apply relative bg-bgl-primary dark:bg-bgd-primary rounded-tr-[2rem] rounded-bl-[2rem] before:rounded-tl-none before:rounded-br-none;
-        margin-top: calc((100vh - 621px) / 2);
+        @apply relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] md:rounded-tr-[2rem] md:rounded-bl-[2rem] before:md:rounded-tl-none before:md:rounded-br-none;
     }
 
     .service {
-        @apply flex flex-col gap-[1.875rem] py-[3.125rem] px-[1.875rem] rounded-[1rem];
+        @apply flex flex-col gap-[1.875rem] px-[1.25rem] py-[1.875rem] rounded-[1rem] md:px-[1.875rem] md:py-[3.125rem];
         border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
@@ -916,6 +918,14 @@
     @media (width >= 48rem) {
         header {
             margin-top: calc(((100vh - 621px) / 2) + 2vh);
+        }
+
+        .sidebar {
+            margin-top: calc((100vh - 621px) / 2);
+        }
+
+        .content {
+            margin-top: calc((100vh - 621px) / 2);
         }
     }
 }

@@ -78,8 +78,8 @@ export default function LayoutComponent() {
                 <span className="bulb"></span>
                 <span className="bulb"></span>
             </div>
-            <div className="flex gap-[1.5rem] relative w-[100rem] z-10 h-screen mx-auto">
-                <div className="flex basis-[27.5rem] gap-[0.875rem]">
+            <div className="flex flex-col gap-[1.5rem] relative z-10 h-screen mx-auto overflow-x-hidden md:flex-row md:w-[100rem]">
+                <div className="flex flex-col gap-[0.875rem] md:basis-[27.5rem] md:flex-row">
                     <header>
                         <div className="header-container hamburger h-[3.875rem] pr-[0.625rem] rounded-[2rem] leading-[3.875rem] md:pr-0 md:bg-gradient">
                             <span></span>
@@ -117,10 +117,10 @@ export default function LayoutComponent() {
                         </nav>
                     </header>
                     <div className="sidebar">
-                        <div className="bg-gradient relative bg-bgl-primary dark:bg-bgd-primary rounded-tl-[2rem] rounded-br-[2rem] before:rounded-tr-none before:rounded-bl-none">
+                        <div className="bg-gradient relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] md:rounded-tr-none md:rounded-bl-none before:md:rounded-tr-none before:md:rounded-bl-none">
                             <div className="relative flex flex-col gap-[1rem]">
-                                <div className="basis-[17.438rem] pt-[2.5rem] px-[2.5rem] aspect-square">
-                                    <img className="img-responsive mx-auto rounded-b-[2rem] rounded-tl-[2rem]" src="/resources/images/rizky-profile-picture.png" alt="Rizky Profile Picture" loading="lazy"/>
+                                <div className="basis-[17.438rem] h-[22.438rem] px-[2.5rem] py-[2.5rem]">
+                                    <img className="w-full h-full rounded-b-[2rem] rounded-tl-[2rem] object-cover" src="/resources/images/rizky-profile-picture.png" alt="Rizky Profile Picture" loading="lazy"/>
                                 </div>
                                 <div className="typed">
                                     <TypeAnimation

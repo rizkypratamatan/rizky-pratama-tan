@@ -30,9 +30,9 @@ export default function ResumeComponent() {
     }, [emblaApi]);
 
     return (
-        <div className="content bg-gradient">
-            <div className="relative p-[0.625rem]">
-                <div className="max-h-[38.813rem] p-[1.875rem] overflow-y-auto">
+        <div className="content bg-gradient md:rounded-tl-none">
+            <div className="relative p-0 md:p-[0.625rem]">
+                <div className="p-[1.875rem] md:max-h-[38.813rem] md:overflow-y-auto">
                     <section className="flex flex-col gap-[0.938rem] pt-[2.5rem]">
                         <div className="title-bullet w-[8.563rem]">
                             <span><IconBriefcaseFilled size={'1rem'}/></span>
