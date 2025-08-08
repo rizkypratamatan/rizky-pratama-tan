@@ -7,26 +7,32 @@ export default function IndexComponent() {
             <div className="relative p-0 md:p-[0.625rem]">
                 <div className="p-[1.875rem] md:max-h-[38.813rem] md:overflow-y-auto">
                     <section className="flex flex-col gap-[0.938rem] pt-[2.5rem]">
-                        <p className="leading-[2.5rem] text-[1.125rem] text-white md:text-[1.5rem]">Hello, I'm <span className="text-primary">Rizky Pratama</span></p>
-                        <h2 className="text-[1.625rem] text-white font-plus-jakarta-sans font-semibold md:text-[3.25rem]">Unity Game Developer
+                        <p className="leading-[2.5rem] text-[1.125rem] text-white md:text-[1.5rem]">Hello,
+                            I'm <span className="text-primary">Rizky Pratama</span></p>
+                        <h2 className="text-[1.625rem] text-white font-plus-jakarta-sans font-semibold md:text-[3.25rem]">Unity
+                            Game Developer
                             and <span className="inline-block bg-primary px-[0.75rem] rounded-[2.5rem] text-[1.5rem] font-semibold text-bgd-primary transform-[rotate(-2deg)] md:text-[2.813rem]">3D Artist</span> Based
                             in California, Los Angeles.</h2>
                         <p className="">With over 6 years of professional experience in AAA game development, I have a
-                            proven track record in Unity, C++ proficiency, and have led the production of a mobile games. My
+                            proven track record in Unity, C++ proficiency, and have led the production of a mobile
+                            games. My
                             leadership in cross-functional teams has significantly contributed to enhancing user
                             engagement.</p>
                     </section>
                     <section className="flex flex-wrap justify-around py-[2.5rem]">
                         <h3 className="stats"><span className="text-white">96</span><span>Completed Projects</span></h3>
-                        <h3 className="stats"><span className="text-white">5+</span><span>Programming Languages</span></h3>
-                        <h3 className="stats"><span className="text-white">10</span><span>Years of Experience</span></h3>
+                        <h3 className="stats"><span className="text-white">5+</span><span>Programming Languages</span>
+                        </h3>
+                        <h3 className="stats"><span className="text-white">10</span><span>Years of Experience</span>
+                        </h3>
                     </section>
                     <section className="pb-[1.875rem]">
                         <div className="title-bullet w-[8.125rem] md:w-[8.625rem]">
                             <span><IconSettingsCode size={'1rem'}/></span>
                             <p>Services</p>
                         </div>
-                        <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold text-white md:text-[2.375rem]">What Services I Provide ?</h2>
+                        <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold text-white md:text-[2.375rem]">What
+                            Services I Provide ?</h2>
                         <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2">
                             <div className="service">
                                 <div className="service-top">
@@ -38,7 +44,8 @@ export default function IndexComponent() {
                                         <h3>3D Modeling</h3>
                                     </div>
                                 </div>
-                                <p>Creating compelling visual content, transitioning creative direction to the realm of video game artistry, 3D modeling and animation.</p>
+                                <p>Creating compelling visual content, transitioning creative direction to the realm of
+                                    video game artistry, 3D modeling and animation.</p>
                                 <a href="#">Get Started</a>
                             </div>
                             <div className="service">
@@ -51,7 +58,8 @@ export default function IndexComponent() {
                                         <h3>Game Development</h3>
                                     </div>
                                 </div>
-                                <p>Unity, Unreal Engine 4, C++ proficiency, production of a top-charting mobile game, enhancing user engagement and retention.</p>
+                                <p>Unity, Unreal Engine 4, C++ proficiency, production of a top-charting mobile game,
+                                    enhancing user engagement and retention.</p>
                                 <a href="#">Get Started</a>
                             </div>
                             <div className="service">
@@ -64,7 +72,8 @@ export default function IndexComponent() {
                                         <h3>Code Optimization</h3>
                                     </div>
                                 </div>
-                                <p>Optimizing code for smooth gameplay across multiple Android and iOS devices, successfully achieving 95% crash-free sessions.</p>
+                                <p>Optimizing code for smooth gameplay across multiple Android and iOS devices,
+                                    successfully achieving 95% crash-free sessions.</p>
                                 <a href="#">Get Started</a>
                             </div>
                             <div className="service">
@@ -77,7 +86,8 @@ export default function IndexComponent() {
                                         <h3>AI System</h3>
                                     </div>
                                 </div>
-                                <p>Engineering a robust AI system for an open-world action game, enhancing NPC behaviors that significantly increased player immersion.</p>
+                                <p>Engineering a robust AI system for an open-world action game, enhancing NPC behaviors
+                                    that significantly increased player immersion.</p>
                                 <a href="#">Get Started</a>
                             </div>
                         </div>

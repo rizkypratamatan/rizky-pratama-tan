@@ -2,8 +2,11 @@ import {
     IconBarbellFilled,
     IconBooks,
     IconBriefcaseFilled,
-    IconCertificate, IconCheck,
-    IconChevronRight, IconLanguage, IconList,
+    IconCertificate,
+    IconCheck,
+    IconChevronRight,
+    IconLanguage,
+    IconList,
     IconSettingsCode,
     IconUsersGroup
 } from "@tabler/icons-react";
@@ -405,8 +408,10 @@ export default function ResumeComponent() {
                                 <p>Soft Skills</p>
                             </div>
                             <div className="skill-column-container">
-                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Critical thinking and analytical skills</p>
-                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Strong problem-solving skills</p>
+                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Critical thinking and
+                                    analytical skills</p>
+                                <p className="soft-skill-item"><IconCheck size={'1rem'}/> Strong problem-solving skills
+                                </p>
                                 <p className="soft-skill-item"><IconCheck size={'1rem'}/> Attention to detail</p>
                                 <p className="soft-skill-item"><IconCheck size={'1rem'}/> Creative Problem-Solving</p>
                                 <p className="soft-skill-item"><IconCheck size={'1rem'}/> Continuous Learning</p>
