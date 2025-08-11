@@ -709,7 +709,7 @@
     .experience h3,
     .experience h4,
     .experience p {
-        @apply px-[0.625rem];
+        @apply px-[0.625rem] select-none;
     }
 
     .experience-line {
