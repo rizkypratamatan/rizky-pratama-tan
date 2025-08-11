@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 @theme {
+    --breakpoint-sm: 30rem;
+    --breakpoint-md: 42.5rem;
+    --breakpoint-lg: 70rem;
+    --breakpoint-xl: 120rem;
     --color-bg-rgba-white: rgba(255, 255, 255, 0.01);
     --color-bgd-gray: #3e4148;
     --color-bgd-primary: #0c0c0c;
@@ -210,10 +214,18 @@
     svg {
         display: inline;
     }
-}
 
-@layer utilities {
+    .ps__rail-y {
+        background: var(--color-bgd-rgba-white) !important;
+        border-radius: 4px !important;
+        width: 8px !important;
+    }
 
+    .ps__thumb-y {
+        background: var(--color-rgba-white-dark) !important;
+        border-radius: 4px !important;
+        width: 4px !important;
+    }
 }
 
 @layer components {
@@ -474,7 +486,7 @@
     .embla {
         @apply flex flex-col gap-[1.875rem];
         --slide-spacing: 0;
-        --slide-size: 50%;
+        --slide-size: 100%;
     }
 
     .embla-viewport {
@@ -515,7 +527,7 @@
     }
 
     header {
-        @apply fixed top-0 left-0 flex flex-row-reverse gap-[0.938rem] flex-wrap w-full bg-bgd-primary z-50 md:static md:basis-[4.125rem] md:flex-col md:gap-[0.5rem] md:bg-transparent;
+        @apply fixed top-0 left-0 flex flex-row-reverse gap-x-[0.938rem] flex-wrap w-full bg-bgd-primary z-50 md:left-[0.938rem] md:flex-col md:gap-[0.5rem] md:w-[4.125rem] md:mt-[2.188rem] md:bg-transparent lg:static lg:basis-[4.125rem];
     }
 
     .header-container {
@@ -594,7 +606,7 @@
     }
 
     .sidebar {
-        @apply basis-full mt-[10.875rem] md:basis-[22.5rem];
+        @apply basis-full mt-[10.875rem] sm:w-[30rem] sm:mx-auto md:w-auto md:mt-[1.25rem] md:ml-[6.25rem] md:mr-[0.938rem] lg:basis-[22.5rem] lg:mx-0;
     }
 
     .typed {
@@ -662,7 +674,7 @@
     }
 
     .content {
-        @apply relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] md:rounded-tr-[2rem] md:rounded-bl-[2rem] before:md:rounded-tl-none before:md:rounded-br-none;
+        @apply relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] sm:w-[30rem] sm:mx-auto md:w-auto md:mt-[1.25rem] md:ml-[6.25rem] md:mr-[0.938rem] lg:mx-0 lg:rounded-tr-[2rem] lg:rounded-bl-[2rem] before:lg:rounded-tl-none before:lg:rounded-br-none;
     }
 
     .service {
@@ -683,8 +695,7 @@
     }
 
     .service-top div:last-child span {
-        @apply text-[0.813rem];
-        color: var(--color-rgba-white-dark);
+        @apply text-[0.813rem] text-rgba-white-dark;
     }
 
     .service-top div:last-child h3 {
@@ -693,6 +704,12 @@
 
     .experience {
         @apply flex flex-col gap-[0.938rem] text-center;
+    }
+
+    .experience h3,
+    .experience h4,
+    .experience p {
+        @apply px-[0.625rem];
     }
 
     .experience-line {
@@ -705,7 +722,7 @@
     }
 
     .resume-column {
-        @apply basis-1/2 flex flex-col gap-[1.25rem];
+        @apply basis-full flex flex-col gap-[1.25rem] md:basis-1/2;
     }
 
     .resume-column-container {
@@ -767,6 +784,10 @@
         @apply absolute top-[0.625rem] right-[0.625rem] py-[0.188rem] px-[0.625rem] border border-bgd-rgba-white rounded-[1.875rem] text-[0.75rem];
     }
 
+    .tool-grid {
+        @apply grid grid-cols-2 gap-[1.875rem] md:grid-cols-3;
+    }
+
     .tool {
         @apply flex flex-col gap-[0.625rem] p-[1.25rem] border border-border-rgba-white rounded-[1rem];
         background: linear-gradient(120deg, rgba(255, 255, 255, .02), rgba(0, 0, 0, .2));
@@ -807,6 +828,14 @@
         @apply leading-[1.25rem] text-center;
     }
 
+    .skill-grid {
+        @apply grid grid-cols-1 gap-[1.875rem] pt-[5.625rem] pb-[1.875rem];
+    }
+
+    .skill-column {
+        @apply flex flex-col gap-[1.25rem];
+    }
+
     .skill-column-container {
         @apply flex flex-col gap-[0.625rem] py-[1.25rem];
     }
@@ -832,7 +861,7 @@
     }
 
     .language-rate div {
-        @apply flex gap-[0.625rem];
+        @apply flex justify-around min-w-[10rem] basis-[15rem];
     }
 
     .language-rate div span {
@@ -840,7 +869,7 @@
     }
 
     .language-rate p {
-        @apply basis-[3.125rem] text-right;
+        @apply grow text-right;
     }
 
     .soft-skill-item {
@@ -851,13 +880,17 @@
         @apply mr-[0.313rem] text-primary;
     }
 
+    .get-in-touch {
+        @apply grid grid-cols-1 gap-[1.875rem];
+    }
+
     .contact-item {
-        @apply flex items-center px-[1.25rem] py-[1.875rem] border border-border-rgba-white rounded-[1rem];
+        @apply flex flex-col gap-[0.625rem] items-start px-[1.25rem] py-[1.25rem] border border-border-rgba-white rounded-[1rem] md:flex-row md:gap-0 md:items-center md:py-[1.875rem];
         background: linear-gradient(120deg, rgba(255, 255, 255, .02), rgba(0, 0, 0, .2));
     }
 
     .contact-item div {
-        @apply basis-[9.375rem] h-[2.5rem] leading-[2.5rem];
+        @apply h-[2.125rem] leading-[2.125rem] md:basis-[9.375rem] md:h-[2.5rem] md:leading-[2.5rem];
     }
 
     .contact-item div svg {
@@ -865,11 +898,11 @@
     }
 
     .contact-item div h3 {
-        @apply inline text-[1.063rem] text-rgba-white-dark;
+        @apply inline text-rgba-white-dark md:text-[1.063rem];
     }
 
     .contact-item p {
-        @apply grow text-[1rem] text-right uppercase;
+        @apply grow text-[0.875rem] text-right uppercase truncate md:text-[1rem];
     }
 
     .contact-map {
@@ -877,7 +910,7 @@
     }
 
     .contact-form fieldset {
-        @apply grid grid-cols-2 gap-[1.875rem];
+        @apply grid grid-cols-1 gap-[1.875rem] md:grid-cols-2;
     }
 
     .contact-form fieldset input {
@@ -886,7 +919,7 @@
     }
 
     .contact-form fieldset textarea {
-        @apply col-span-2 px-[0.938rem] border border-border-rgba-white rounded-[0.625rem] leading-[3.125rem] text-[1rem] resize-none;
+        @apply px-[0.938rem] border border-border-rgba-white rounded-[0.625rem] leading-[3.125rem] text-[1rem] resize-none md:col-span-2;
     }
 
     .contact-form fieldset input:focus,
@@ -915,7 +948,22 @@
         @apply ml-[0.188rem];
     }
 
-    @media (width >= 48rem) {
+    @media (width >= 70rem) {
+        header {
+            margin-top: 3vh;
+        }
+
+        .sidebar {
+            margin-top: 1vh;
+        }
+
+        .content {
+            margin-bottom: 1vh;
+            margin-top: 1vh;
+        }
+    }
+
+    @media (width >= 70rem) and (height >= 41.563rem) {
         header {
             margin-top: calc(((100vh - 621px) / 2) + 2vh);
         }
@@ -926,6 +974,30 @@
 
         .content {
             margin-top: calc((100vh - 621px) / 2);
+        }
+    }
+
+    @media (width >= 85rem) {
+        .embla {
+            --slide-size: 50%;
+        }
+
+        .tool-grid {
+            @apply grid-cols-4;
+        }
+
+        .skill-grid {
+            @apply grid-cols-2;
+        }
+    }
+
+    @media (width >= 96.25rem) {
+        .get-in-touch {
+            @apply grid-cols-2;
+        }
+
+        .get-in-touch .contact-item:last-child {
+            @apply col-span-2;
         }
     }
 }
