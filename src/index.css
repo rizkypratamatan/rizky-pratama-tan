@@ -498,7 +498,7 @@
     }
 
     header {
-        @apply fixed top-0 left-0 flex flex-row-reverse gap-x-[0.938rem] flex-wrap w-full bg-bgd-primary z-50 md:left-[0.938rem] md:flex-col md:gap-[0.5rem] md:w-[4.125rem] md:mt-[2.188rem] md:bg-transparent lg:static lg:basis-[4.125rem];
+        @apply fixed top-0 left-0 flex flex-row-reverse gap-x-[0.938rem] flex-wrap w-full bg-bgl-primary z-50 md:left-[0.938rem] md:flex-col md:gap-[0.5rem] md:w-[4.125rem] md:mt-[2.188rem] md:bg-transparent lg:static lg:basis-[4.125rem] dark:bg-bgd-primary;
     }
 
     .header-container {
