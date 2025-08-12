@@ -6,23 +6,23 @@ export default function IndexComponent() {
     return (
         <>
             <section className="flex flex-col gap-[0.938rem] pt-[2.5rem]">
-                <p className="leading-[2.5rem] text-[1.125rem] text-white md:text-[1.5rem]">Hello,
+                <p className="leading-[2.5rem] text-[1.125rem] md:text-[1.5rem]">Hello,
                     I'm <span className="text-primary">Rizky Pratama</span></p>
-                <h2 className="text-[1.625rem] text-white font-plus-jakarta-sans font-semibold md:text-[3.25rem]">Fullstack
+                <h2 className="text-[1.625rem] font-plus-jakarta-sans font-semibold md:text-[3.25rem]">Fullstack
                     Software Engineer Specializing
                     in <span className="inline-block bg-primary px-[0.75rem] rounded-[2.5rem] text-[1.5rem] font-semibold text-bgd-primary transform-[rotate(-2deg)] md:text-[2.813rem]">Scalable</span> Web
                     Applications.</h2>
-                <p>With over 13 years of experience across different programming language and proven track
+                <p className="text-gray dark:text-rgba-white-dark">With over 13 years of experience across different programming language and proven track
                     record in Rust, Python, React, Kotlin, C#, and PHP. I build
                     efficient, maintainable, and future-ready software solutions for modern business needs. Optimized
                     and efficient are my keywords in developing a system that will transform your imagination into
                     reality.</p>
             </section>
             <section className="flex flex-wrap justify-around py-[2.5rem]">
-                <h3 className="stats"><span className="text-white">68</span><span>Completed Projects</span></h3>
-                <h3 className="stats"><span className="text-white">5+</span><span>Programming Languages</span>
+                <h3 className="stats"><span>68</span><span>Completed Projects</span></h3>
+                <h3 className="stats"><span>5+</span><span>Programming Languages</span>
                 </h3>
-                <h3 className="stats"><span className="text-white">13</span><span>Years of Experience</span>
+                <h3 className="stats"><span>13</span><span>Years of Experience</span>
                 </h3>
             </section>
             <section className="pb-[1.875rem]">
@@ -30,10 +30,10 @@ export default function IndexComponent() {
                     <span><IconSettingsCode size={'1rem'}/></span>
                     <p>Expertise</p>
                 </div>
-                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold text-white md:text-[2.375rem]">What
+                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold md:text-[2.375rem]">What
                     Services I Provide ?</h2>
                 <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2">
-                    <div className="service">
+                    <div className="service bg-gradient-dark dark:bg-none">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-1.png" alt="Frontend Development Icon" loading="lazy"/>
@@ -47,7 +47,7 @@ export default function IndexComponent() {
                             Creative looking and smooth transition and animation rich visual content.</p>
                         <Link to="/contact/">Get Started</Link>
                     </div>
-                    <div className="service">
+                    <div className="service bg-gradient-dark dark:bg-none">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-2.png" alt="Backend Development Icon" loading="lazy"/>
@@ -62,7 +62,7 @@ export default function IndexComponent() {
                             engine visibility and AI engine optimized.</p>
                         <Link to="/contact/">Get Started</Link>
                     </div>
-                    <div className="service">
+                    <div className="service bg-gradient-dark dark:bg-none">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-3.png" alt="IOT Development Icon" loading="lazy"/>
@@ -76,7 +76,7 @@ export default function IndexComponent() {
                             activities through synchronized environment</p>
                         <Link to="/contact/">Get Started</Link>
                     </div>
-                    <div className="service">
+                    <div className="service bg-gradient-dark dark:bg-none">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-4.png" alt="3D Modeling Icon" loading="lazy"/>
