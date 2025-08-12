@@ -12,7 +12,8 @@ export default function IndexComponent() {
                     Software Engineer Specializing
                     in <span className="inline-block bg-primary px-[0.75rem] rounded-[2.5rem] text-[1.5rem] font-semibold text-bgd-primary transform-[rotate(-2deg)] md:text-[2.813rem]">Scalable</span> Web
                     Applications.</h2>
-                <p className="text-gray dark:text-rgba-white-dark">With over 13 years of experience across different programming language and proven track
+                <p className="text-gray dark:text-rgba-white-dark">With over 13 years of experience across different
+                    programming language and proven track
                     record in Rust, Python, React, Kotlin, C#, and PHP. I build
                     efficient, maintainable, and future-ready software solutions for modern business needs. Optimized
                     and efficient are my keywords in developing a system that will transform your imagination into
@@ -33,7 +34,7 @@ export default function IndexComponent() {
                 <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold md:text-[2.375rem]">What
                     Services I Provide ?</h2>
                 <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2">
-                    <div className="service bg-gradient-dark dark:bg-none">
+                    <div className="service">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-1.png" alt="Frontend Development Icon" loading="lazy"/>
@@ -47,7 +48,7 @@ export default function IndexComponent() {
                             Creative looking and smooth transition and animation rich visual content.</p>
                         <Link to="/contact/">Get Started</Link>
                     </div>
-                    <div className="service bg-gradient-dark dark:bg-none">
+                    <div className="service">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-2.png" alt="Backend Development Icon" loading="lazy"/>
@@ -62,7 +63,7 @@ export default function IndexComponent() {
                             engine visibility and AI engine optimized.</p>
                         <Link to="/contact/">Get Started</Link>
                     </div>
-                    <div className="service bg-gradient-dark dark:bg-none">
+                    <div className="service">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-3.png" alt="IOT Development Icon" loading="lazy"/>
@@ -76,7 +77,7 @@ export default function IndexComponent() {
                             activities through synchronized environment</p>
                         <Link to="/contact/">Get Started</Link>
                     </div>
-                    <div className="service bg-gradient-dark dark:bg-none">
+                    <div className="service">
                         <div className="service-top">
                             <div>
                                 <img src="/resources/images/service-4.png" alt="3D Modeling Icon" loading="lazy"/>

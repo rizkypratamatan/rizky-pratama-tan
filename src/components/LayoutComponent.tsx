@@ -23,16 +23,45 @@ export default function LayoutComponent() {
     const perfectScrollbar: any = useRef(null);
 
     const [mobile, setMobile] = useState<boolean>(false);
+    const [dark, setDark] = useState<boolean>(false);
 
     const switchTheme = (theme: Theme) => {
         const html: Element | null = document.querySelector('html');
 
         if(html !== null) {
             html.setAttribute('data-theme', theme.toString().toLowerCase());
+
+            if(theme === Theme.Dark) {
+                setDark(true);
+            } else {
+                setDark(false);
+            }
         }
     }
 
     useEffect((): any => {
+        const html: Element | null = document.querySelector('html');
+
+        if(html !== null) {
+            if(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                html.setAttribute('data-theme', 'dark');
+                setDark(true);
+            } else {
+                html.setAttribute('data-theme', 'light');
+                setDark(false);
+            }
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+                if(event.matches) {
+                    html.setAttribute('data-theme', 'dark');
+                    setDark(true);
+                } else {
+                    html.setAttribute('data-theme', 'light');
+                    setDark(false);
+                }
+            });
+        }
+
         if(window.innerWidth < 1120) {
             setMobile(true);
 
@@ -100,12 +129,14 @@ export default function LayoutComponent() {
                 <div className="flex flex-col gap-[1.5rem] mx-auto lg:flex-row lg:max-w-[120rem] lg:mx-[1.875rem] xl:mx-auto">
                     <div className="flex flex-col gap-[0.875rem] lg:basis-[27.5rem] lg:flex-row">
                         <header>
-                            <div className="header-container hamburger h-[3.875rem] pr-[0.625rem] rounded-[2rem] leading-[3.875rem] md:pr-0 md:bg-gradient-container-light">
+                            <div className="header-container hamburger bg-gradient-container-md h-[3.875rem] pr-[0.625rem] rounded-[2rem] leading-[3.875rem] md:pr-0">
                                 <span></span>
                             </div>
-                            <div className="header-container h-[3.875rem] rounded-[2rem] leading-[3.875rem] md:bg-gradient-container-light">
-                                <IconSun className="hidden relative top-[-0.125rem] dark:inline" onClick={() => switchTheme(Theme.Light)}/>
-                                <IconMoon className="inline relative top-[-0.125rem] dark:hidden" onClick={() => switchTheme(Theme.Dark)}/>
+                            <div className="header-container bg-gradient-container-md h-[3.875rem] rounded-[2rem] leading-[3.875rem]">
+                                {dark &&
+                                    <IconSun className="relative top-[-0.125rem]" onClick={() => switchTheme(Theme.Light)}/>}
+                                {!dark &&
+                                    <IconMoon className="relative top-[-0.125rem]" onClick={() => switchTheme(Theme.Dark)}/>}
                             </div>
                             <div className="grow pl-[1.125rem] py-[0.625rem] md:hidden">
                                 <h1 className="leading-[1.438rem] text-[0.938rem] font-semibold">Rizky Pratama</h1>
@@ -123,7 +154,7 @@ export default function LayoutComponent() {
                                     />
                                 </p>
                             </div>
-                            <nav className="bg-gradient-container-light header-container w-full before:rounded-none md:relative md:w-auto md:rounded-[2rem] before:md:rounded-[2rem]">
+                            <nav className="bg-gradient-container header-container w-full before:rounded-none md:relative md:w-auto md:rounded-[2rem] before:md:rounded-[2rem]">
                                 <ul id="main-menu">
                                     <li><Link className="active" to="/"><IconUserCode/><span>About</span></Link></li>
                                     <li><Link to="/resume/"><IconBuildingBank/><span>Resume</span></Link></li>
@@ -137,7 +168,7 @@ export default function LayoutComponent() {
                             </nav>
                         </header>
                         <div className="sidebar">
-                            <div className="bg-gradient-container-light relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] lg:rounded-tr-none lg:rounded-bl-none before:lg:rounded-tr-none before:lg:rounded-bl-none">
+                            <div className="bg-gradient-container relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] lg:rounded-tr-none lg:rounded-bl-none before:lg:rounded-tr-none before:lg:rounded-bl-none">
                                 <div className="relative flex flex-col gap-[1rem]">
                                     <div className="basis-[17.438rem] h-[22.438rem] px-[2.5rem] py-[2.5rem]">
                                         <img className="w-full h-full rounded-b-[2rem] rounded-tl-[2rem] object-cover" src="/resources/images/rizky-profile-picture.png" alt="Rizky Profile Picture" draggable={false} loading="lazy"/>
@@ -171,7 +202,7 @@ export default function LayoutComponent() {
                         </div>
                     </div>
                     <div className="basis-[37.875rem] grow">
-                        <div className="content bg-gradient-container-light lg:rounded-tl-none">
+                        <div className="content bg-gradient-container lg:rounded-tl-none">
                             <div className="relative p-0 rounded-[2rem] lg:px-[0.188rem] lg:py-[0.938rem] lg:overflow-hidden">
                                 {
                                     mobile && <div className="px-[1.688rem] py-[0.938rem] lg:max-h-[39.687rem]">

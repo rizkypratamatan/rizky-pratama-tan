@@ -44,7 +44,7 @@ export default function ResumeComponent() {
                     <span><IconBriefcaseFilled size={'1rem'}/></span>
                     <p>Resume</p>
                 </div>
-                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold text-white md:text-[2.375rem]">Work
+                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold md:text-[2.375rem]">Work
                     Experience & Education</h2>
                 <div className="embla">
                     <div className="embla-viewport" ref={emblaCarousel}>
@@ -53,7 +53,8 @@ export default function ResumeComponent() {
                                 <h3 className="text-primary">2022 - Present</h3>
                                 <div className="experience-line"></div>
                                 <h4 className="text-[1.063rem] font-semibold">R&D</h4>
-                                <p className="text-rgba-white-dark">Jakarta Utara, PT Asia Multidana</p>
+                                <p className="text-rgba-black-dark dark:text-rgba-white-dark">Jakarta Utara, PT Asia
+                                    Multidana</p>
                                 <p>Responsible for creating software and hardware improvements, as well as internal
                                     software development.</p>
                             </div>
@@ -102,7 +103,7 @@ export default function ResumeComponent() {
                                 <p>2025</p>
                             </div>
                             <p className="font-semibold">Certified Ethical Hacker</p>
-                            <p className="text-rgba-white-dark">EC-Council</p>
+                            <p className="text-gray-light">EC-Council</p>
                             <p>Certified Ethical Hacker from EC-Council. Skilled in Pentesting.</p>
                             <div>
                                 <button>Certificate <IconChevronRight size={'0.875rem'}/></button>
@@ -113,7 +114,7 @@ export default function ResumeComponent() {
                                 <p>2025</p>
                             </div>
                             <p className="font-semibold">MTCTCE</p>
-                            <p className="text-rgba-white-dark">Mikrotik</p>
+                            <p className="text-gray-light">Mikrotik</p>
                             <p>Certified MTCTCE, Mikrotik. Skilled in Mikrotik Traffic Control.</p>
                             <div>
                                 <button>Certificate <IconChevronRight size={'0.875rem'}/></button>
@@ -124,7 +125,7 @@ export default function ResumeComponent() {
                                 <p>2024</p>
                             </div>
                             <p className="font-semibold">MTCRE</p>
-                            <p className="text-rgba-white-dark">Mikrotik</p>
+                            <p className="text-gray-light">Mikrotik</p>
                             <p>Certified MTCTCE, Mikrotik. Skilled in Mikrotik Traffic Control.</p>
                             <div>
                                 <button>Certificate <IconChevronRight size={'0.875rem'}/></button>
@@ -143,7 +144,7 @@ export default function ResumeComponent() {
                                 <p>2007</p>
                             </div>
                             <p className="font-semibold">Bachelor of Science</p>
-                            <p className="text-rgba-white-dark">Gunadarma, ID</p>
+                            <p className="text-gray-light">Gunadarma, ID</p>
                             <p>Bachelor's degree in computer science, software engineer, and a related field.</p>
                             <div>
                                 <button>Learn More <IconChevronRight size={'0.875rem'}/></button>
@@ -154,7 +155,7 @@ export default function ResumeComponent() {
                                 <p>2004</p>
                             </div>
                             <p className="font-semibold">Senior High School</p>
-                            <p className="text-rgba-white-dark">SMAN 3 Depok, ID</p>
+                            <p className="text-gray-light">SMAN 3 Depok, ID</p>
                             <p>Senior high school graduated studies.</p>
                             <div>
                                 <button>Learn More <IconChevronRight size={'0.875rem'}/></button>
@@ -165,7 +166,7 @@ export default function ResumeComponent() {
                                 <p>2004</p>
                             </div>
                             <p className="font-semibold">Junior High School</p>
-                            <p className="text-rgba-white-dark">SMPN 4 Depok, ID</p>
+                            <p className="text-gray-light">SMPN 4 Depok, ID</p>
                             <p>Junior high school graduated studies.</p>
                             <div>
                                 <button>Learn More <IconChevronRight size={'0.875rem'}/></button>
@@ -179,7 +180,7 @@ export default function ResumeComponent() {
                     <span><IconBarbellFilled size={'1rem'}/></span>
                     <p>Hard Skills</p>
                 </div>
-                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold text-white md:text-[2.375rem]">Technology
+                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold md:text-[2.375rem]">Technology
                     Stack</h2>
                 <div className="grid grid-cols-1 gap-[1.875rem] md:grid-cols-2">
                     <div className="technology">
@@ -273,7 +274,7 @@ export default function ResumeComponent() {
                     <span><IconSettingsCode size={'1rem'}/></span>
                     <p>Tool Skills</p>
                 </div>
-                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold text-white md:text-[2.375rem]">Tool
+                <h2 className="pt-[0.625rem] pb-[1.875rem] text-[1.438rem] font-semibold md:text-[2.375rem]">Tool
                     Stack</h2>
                 <div className="tool-grid">
                     <div className="tool">
@@ -359,7 +360,7 @@ export default function ResumeComponent() {
                 </div>
             </section>
             <section className="flex flex-col gap-[0.938rem] pt-[5.625rem]">
-                <h2 className="text-[1.438rem] font-semibold text-white md:text-[2.375rem]">General Skills</h2>
+                <h2 className="text-[1.438rem] font-semibold md:text-[2.375rem]">General Skills</h2>
                 <div className="title-bullet w-[12.375rem] mt-[1.875rem]">
                     <span><IconUsersGroup size={'1rem'}/></span>
                     <p>Communication</p>
@@ -459,9 +460,9 @@ export default function ResumeComponent() {
                                         <span className="bg-primary"></span>
                                         <span className="bg-primary"></span>
                                         <span className="bg-primary"></span>
-                                        <span className="bg-bgd-gray"></span>
-                                        <span className="bg-bgd-gray"></span>
-                                        <span className="bg-bgd-gray"></span>
+                                        <span className="bg-border-white dark:bg-bgd-gray"></span>
+                                        <span className="bg-border-white dark:bg-bgd-gray"></span>
+                                        <span className="bg-border-white dark:bg-bgd-gray"></span>
                                     </div>
                                     <p>70%</p>
                                 </div>
@@ -484,7 +485,7 @@ export default function ResumeComponent() {
                                         <span className="bg-primary"></span>
                                         <span className="bg-primary"></span>
                                         <span className="bg-primary"></span>
-                                        <span className="bg-bgd-gray"></span>
+                                        <span className="bg-border-white dark:bg-bgd-gray"></span>
                                     </div>
                                     <p>90%</p>
                                 </div>
