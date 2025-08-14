@@ -188,10 +188,10 @@ export default function LayoutComponent() {
                                     </div>
                                     <h1 className="name">Rizky Pratama</h1>
                                     <div className="social">
-                                        <Link to="https://www.linkedin.com/in/rizkypratamatan/" target="_blank" rel="noopener noreferrer"><IconBrandLinkedinFilled size={20}/></Link>
-                                        <Link to="https://github.com/rizkypratamatan/" target="_blank" rel="noopener noreferrer"><IconBrandGithubFilled size={20}/></Link>
-                                        <Link to="https://www.instagram.com/rizky.tech/" target="_blank" rel="noopener noreferrer"><IconBrandInstagram size={20}/></Link>
-                                        <Link to="https://www.tiktok.com/@rizky.tech/" target="_blank" rel="noopener noreferrer"><IconBrandTiktok size={20}/></Link>
+                                        <Link to="https://www.linkedin.com/in/rizkypratamatan/" target="_blank" rel="noopener noreferrer" aria-label="Rizky Pratama Linkedin" aria-labelledby="Rizky Pratama Linkedin"><IconBrandLinkedinFilled size={20}/></Link>
+                                        <Link to="https://github.com/rizkypratamatan/" target="_blank" rel="noopener noreferrer" aria-label="Rizky Pratama Github" aria-labelledby="Rizky Pratama Github"><IconBrandGithubFilled size={20}/></Link>
+                                        <Link to="https://www.instagram.com/rizky.tech/" target="_blank" rel="noopener noreferrer" aria-label="Rizky Pratama Instagram" aria-labelledby="Rizky Pratama Instagram"><IconBrandInstagram size={20}/></Link>
+                                        <Link to="https://www.tiktok.com/@rizky.tech/" target="_blank" rel="noopener noreferrer" aria-label="Rizky Pratama Tiktok" aria-labelledby="Rizky Pratama Tiktok"><IconBrandTiktok size={20}/></Link>
                                     </div>
                                     <div className="contact">
                                         <a href="#">Download CV</a>
