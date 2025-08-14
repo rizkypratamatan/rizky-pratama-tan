@@ -37,7 +37,7 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-1.png" alt="Frontend Development Icon" loading="lazy"/>
+                                <img src="/resources/images/service-1.png" alt="Frontend Development Icon"/>
                             </div>
                             <div>
                                 <span>52 completed projects</span>
@@ -51,7 +51,7 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-2.png" alt="Backend Development Icon" loading="lazy"/>
+                                <img src="/resources/images/service-2.png" alt="Backend Development Icon"/>
                             </div>
                             <div>
                                 <span>33 completed projects</span>
@@ -66,7 +66,7 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-3.png" alt="IOT Development Icon" loading="lazy"/>
+                                <img src="/resources/images/service-3.png" alt="IOT Development Icon"/>
                             </div>
                             <div>
                                 <span>8 completed projects</span>
@@ -80,7 +80,7 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-4.png" alt="3D Modeling Icon" loading="lazy"/>
+                                <img src="/resources/images/service-4.png" alt="3D Modeling Icon"/>
                             </div>
                             <div>
                                 <span>2 completed projects</span>
