@@ -186,7 +186,11 @@ export default function ResumeComponent() {
                     <div className="technology">
                         <div className="technology-detail">
                             <div>
-                                <img src="/resources/images/rust-logo.png" alt="Rust Logo Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/rust-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/rust-logo.png" type="image/png"/>
+                                    <img src="/resources/images/rust-logo.png" alt="Rust Logo Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <h3>Rust</h3>
                         </div>
@@ -198,7 +202,11 @@ export default function ResumeComponent() {
                     <div className="technology">
                         <div className="technology-detail">
                             <div>
-                                <img src="/resources/images/python-logo.png" alt="Python Logo Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/python-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/python-logo.png" type="image/png"/>
+                                    <img src="/resources/images/python-logo.png" alt="Python Logo Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <h3>Python</h3>
                         </div>
@@ -210,7 +218,11 @@ export default function ResumeComponent() {
                     <div className="technology">
                         <div className="technology-detail">
                             <div>
-                                <img src="/resources/images/javascript-logo.png" alt="Javascript Logo Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/javascript-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/javascript-logo.png" type="image/png"/>
+                                    <img src="/resources/images/javascript-logo.png" alt="Javascript Logo Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <h3>Javascript</h3>
                         </div>
@@ -222,7 +234,11 @@ export default function ResumeComponent() {
                     <div className="technology">
                         <div className="technology-detail">
                             <div>
-                                <img src="/resources/images/java-logo.png" alt="Java Logo Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/java-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/java-logo.png" type="image/png"/>
+                                    <img src="/resources/images/java-logo.png" alt="Java Logo Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <h3>Java</h3>
                         </div>
@@ -234,7 +250,11 @@ export default function ResumeComponent() {
                     <div className="technology">
                         <div className="technology-detail">
                             <div>
-                                <img src="/resources/images/c-plus-plus-logo.png" alt="C++ Logo Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/c-plus-plus-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/c-plus-plus-logo.png" type="image/png"/>
+                                    <img src="/resources/images/c-plus-plus-logo.png" alt="C++ Logo Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <h3>C++</h3>
                         </div>
@@ -246,7 +266,11 @@ export default function ResumeComponent() {
                     <div className="technology">
                         <div className="technology-detail">
                             <div>
-                                <img src="/resources/images/c-sharp-logo.png" alt="C# Logo Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/c-sharp-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/c-sharp-logo.png" type="image/png"/>
+                                    <img src="/resources/images/c-sharp-logo.png" alt="C# Logo Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <h3>C#</h3>
                         </div>
@@ -258,7 +282,11 @@ export default function ResumeComponent() {
                     <div className="technology">
                         <div className="technology-detail">
                             <div>
-                                <img src="/resources/images/kotlin-logo.png" alt="Kotlin Logo Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/kotlin-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/kotlin-logo.png" type="image/png"/>
+                                    <img src="/resources/images/kotlin-logo.png" alt="Kotlin Logo Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <h3>Kotlin</h3>
                         </div>
@@ -447,7 +475,11 @@ export default function ResumeComponent() {
                     <div className="skill-column-container">
                         <div className="language-item">
                             <div className="language-image">
-                                <img className="rounded-[0.5rem]" src="/resources/images/english-logo.png" alt="English Flag Logo"/>
+                                <picture className="rounded-[0.5rem] select-none">
+                                    <source srcSet="/resources/images/english-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/english-logo.png" type="image/png"/>
+                                    <img src="/resources/images/english-logo.png" alt="English Flag Logo" draggable={false}/>
+                                </picture>
                             </div>
                             <div className="language-text">
                                 <h3>English</h3>
@@ -470,7 +502,11 @@ export default function ResumeComponent() {
                         </div>
                         <div className="language-item">
                             <div className="language-image">
-                                <img className="rounded-[0.5rem]" src="/resources/images/bahasa-logo.png" alt="Bahasa Flag Logo"/>
+                                <picture className="rounded-[0.5rem] select-none">
+                                    <source srcSet="/resources/images/bahasa-logo.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/bahasa-logo.png" type="image/png"/>
+                                    <img src="/resources/images/bahasa-logo.png" alt="Bahasa Flag Logo" draggable={false}/>
+                                </picture>
                             </div>
                             <div className="language-text">
                                 <h3>Bahasa</h3>

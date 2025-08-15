@@ -37,7 +37,11 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-1.png" alt="Frontend Development Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/service-1.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/service-1.png" type="image/png"/>
+                                    <img src="/resources/images/service-1.png" alt="Frontend Development Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <div>
                                 <span>52 completed projects</span>
@@ -51,7 +55,11 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-2.png" alt="Backend Development Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/service-2.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/service-2.png" type="image/png"/>
+                                    <img src="/resources/images/service-2.png" alt="Backend Development Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <div>
                                 <span>33 completed projects</span>
@@ -66,7 +74,11 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-3.png" alt="IOT Development Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/service-3.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/service-3.png" type="image/png"/>
+                                    <img src="/resources/images/service-3.png" alt="IOT Development Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <div>
                                 <span>8 completed projects</span>
@@ -80,7 +92,11 @@ export default function IndexComponent() {
                     <div className="service">
                         <div className="service-top">
                             <div>
-                                <img src="/resources/images/service-4.png" alt="3D Modeling Icon"/>
+                                <picture className="select-none">
+                                    <source srcSet="/resources/images/service-4.webp" type="image/webp"/>
+                                    <source srcSet="/resources/images/service-4.png" type="image/png"/>
+                                    <img src="/resources/images/service-4.png" alt="3D Modeling Icon" draggable={false}/>
+                                </picture>
                             </div>
                             <div>
                                 <span>2 completed projects</span>

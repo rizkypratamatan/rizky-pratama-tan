@@ -171,7 +171,11 @@ export default function LayoutComponent() {
                             <div className="bg-gradient-container relative bg-bgl-primary dark:bg-bgd-primary rounded-[2rem] lg:rounded-tr-none lg:rounded-bl-none before:lg:rounded-tr-none before:lg:rounded-bl-none">
                                 <div className="relative flex flex-col gap-[1rem]">
                                     <div className="basis-[17.438rem] h-[22.438rem] px-[2.5rem] py-[2.5rem]">
-                                        <img className="w-full h-full rounded-b-[2rem] rounded-tl-[2rem] object-cover" src="/resources/images/rizky-profile-picture.png" alt="Rizky Profile Picture" draggable={false}/>
+                                        <picture className="w-full h-full rounded-b-[2rem] rounded-tl-[2rem] object-cover select-none">
+                                            <source srcSet="/resources/images/rizky-profile-picture.webp" type="image/webp"/>
+                                            <source srcSet="/resources/images/rizky-profile-picture.png" type="image/png"/>
+                                            <img src="/resources/images/rizky-profile-picture.png" alt="Rizky Profile Picture" draggable={false} fetchPriority="high"/>
+                                        </picture>
                                     </div>
                                     <div className="typed">
                                         <TypeAnimation
