@@ -1,5 +1,8 @@
 import {IconBrandTelegram, IconChevronRightPipe} from "@tabler/icons-react";
 import {useState} from "react";
+import {toast} from "react-toastify";
+import {Rest} from "../../libraries/Rest";
+import {SendMessageRequest} from "../../models/site/SendMessageRequest.ts";
 
 
 export default function ContactComponent() {
@@ -8,9 +11,31 @@ export default function ContactComponent() {
     const [message, setMessage] = useState<string>('');
 
     const sendEmail = (event: any) => {
-        const subject: string = encodeURIComponent(`[rizkypratamatan.com] ${fullName} sent a message`);
-        const body: string = encodeURIComponent(`Sender Full Name : ${fullName}\nSender Email Address : ${emailAddress}\n\n\n ${message}`);
-        window.location.href = `mailto:rizkypratama@preloode.com?subject=${subject}&body=${body}`;
+        fetch(import.meta.env.PLD_API_URL + '/site/send-message/', Rest.initializeRequest(
+            new SendMessageRequest(
+                undefined,
+                emailAddress,
+                message,
+                fullName
+            ),
+            '/site/send-message/'
+        )).then(response => response.json()).then(data => {
+
+            if(data.result) {
+
+                toast.success('Message sent successfully!');
+
+            } else {
+
+                toast.error(data.response);
+
+            }
+
+        }).catch(error => {
+
+            toast.error(error);
+
+        });
 
         event.preventDefault();
     }

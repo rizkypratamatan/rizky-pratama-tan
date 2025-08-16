@@ -14,6 +14,7 @@ import {
 import {useEffect, useRef, useState} from "react";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import {Link, Outlet, useLocation} from "react-router";
+import {ToastContainer} from "react-toastify";
 import {TypeAnimation} from "react-type-animation";
 import {Theme} from "../enums/core/Theme.ts";
 
@@ -125,6 +126,7 @@ export default function LayoutComponent() {
                 <span className="bulb"></span>
                 <span className="bulb"></span>
             </div>
+            <ToastContainer position="top-right" autoClose={5000} closeOnClick newestOnTop={true} pauseOnFocusLoss={false} pauseOnHover={false} theme="dark"></ToastContainer>
             <div className="relative z-10 h-screen overflow-x-hidden">
                 <div className="flex flex-col gap-[1.5rem] mx-auto lg:flex-row lg:max-w-[120rem] lg:mx-[1.875rem] xl:mx-auto">
                     <div className="flex flex-col gap-[0.875rem] lg:basis-[27.5rem] lg:flex-row">
