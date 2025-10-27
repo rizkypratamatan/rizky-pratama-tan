@@ -10,10 +10,10 @@ const MainMenus: React.FC = async() => {
             <MainMenuItem href="/" type={MainMenuType.About}>
                 <IconUserCode className="inline duration-500" size={20}/>
             </MainMenuItem>
-            <MainMenuItem href="/resume/" type={MainMenuType.Resume}>
+            <MainMenuItem href="/resume" type={MainMenuType.Resume}>
                 <IconBuildingBank className="inline duration-500" size={20}/>
             </MainMenuItem>
-            <MainMenuItem href="/contact/" type={MainMenuType.Contact}>
+            <MainMenuItem href="/contact" type={MainMenuType.Contact}>
                 <IconBrandTelegram className="inline duration-500" size={20}/>
             </MainMenuItem>
         </ul>

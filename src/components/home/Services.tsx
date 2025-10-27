@@ -23,7 +23,7 @@ const Services: React.FC = async() => {
                 <ServiceItemDescription>Creating compelling web frontend with HTML5, CSS3, Tailwind, Javascript,
                     React. Creative looking and smooth transition and animation rich visual content.
                 </ServiceItemDescription>
-                <Link className="text-sm uppercase underline md:text-base" href="/contact/" aria-label="Get Started">Get
+                <Link className="text-sm uppercase underline md:text-base" href="/contact" aria-label="Get Started">Get
                     Started</Link>
             </ServiceItem>
             <ServiceItem>
@@ -33,7 +33,7 @@ const Services: React.FC = async() => {
                 <ServiceItemDescription>Rust, Java, Kotlin, C#, PHP proficiency, production of a robust and stable
                     backend system, enhancing search engine visibility and AI engine optimized.
                 </ServiceItemDescription>
-                <Link className="text-sm uppercase underline md:text-base" href="/contact/" aria-label="Get Started">Get
+                <Link className="text-sm uppercase underline md:text-base" href="/contact" aria-label="Get Started">Get
                     Started</Link>
             </ServiceItem>
             <ServiceItem>
@@ -43,7 +43,7 @@ const Services: React.FC = async() => {
                 <ServiceItemDescription>Smart manufacturing and smart home development with C++, will optimize
                     your business and activities through synchronized environment
                 </ServiceItemDescription>
-                <Link className="text-sm uppercase underline md:text-base" href="/contact/" aria-label="Get Started">Get
+                <Link className="text-sm uppercase underline md:text-base" href="/contact" aria-label="Get Started">Get
                     Started</Link>
             </ServiceItem>
             <ServiceItem>
@@ -52,7 +52,7 @@ const Services: React.FC = async() => {
                 </ServiceItemHeading>
                 <ServiceItemDescription>Engineering a robust AI system for predicting and classifying use case
                     into a real world solution.</ServiceItemDescription>
-                <Link className="text-sm uppercase underline md:text-base" href="/contact/" aria-label="Get Started">Get
+                <Link className="text-sm uppercase underline md:text-base" href="/contact" aria-label="Get Started">Get
                     Started</Link>
             </ServiceItem>
         </div>
