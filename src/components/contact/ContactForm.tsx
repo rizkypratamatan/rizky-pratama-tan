@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
                 <div>
                     <Button className="duration-300 hover:text-primary-100" aria-label="Send Message">
                         <span>Send Message</span>
-                        <IconChevronRightPipe className="inline-block ml-2 mt-0.5" size={16}/>
+                        <IconChevronRightPipe className="inline-block size-4 ml-2 mt-0.5"/>
                     </Button>
                     {errors.token && <p className="ml-2 text-sm text-red-500">{errors.token.message}</p>}
                 </div>

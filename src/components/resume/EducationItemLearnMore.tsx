@@ -2,9 +2,9 @@ import React from "react";
 
 
 type Props = {
-    certificate?: string;
-    place?: string;
-    description?: string;
+    certificate: string;
+    place: string;
+    description: string;
 };
 
 const EducationItemLearnMore: React.FC<Props> = ({certificate, place, description}) => {

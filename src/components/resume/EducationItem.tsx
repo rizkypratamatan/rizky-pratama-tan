@@ -4,12 +4,12 @@ import React from "react";
 
 
 type Props = {
-    children?: React.ReactNode;
-    year?: string;
-    certificate?: string;
-    place?: string;
-    description?: string;
-    buttonText?: string;
+    children: React.ReactNode;
+    year: string;
+    certificate: string;
+    place: string;
+    description: string;
+    buttonText: string;
 };
 
 const EducationItem: React.FC<Props> = async({children, year, certificate, place, description, buttonText}) => {
@@ -25,14 +25,14 @@ const EducationItem: React.FC<Props> = async({children, year, certificate, place
                 <Dialog.Root>
                     <Dialog.Trigger className="flex gap-1 items-center text-sm font-semibold uppercase md:text-base" aria-label={`Learn More About ${certificate} Certificate`}>
                         <span>{buttonText}</span>
-                        <IconChevronRight size={16}/>
+                        <IconChevronRight className="size-4"/>
                     </Dialog.Trigger>
                     <Dialog.Portal>
                         <Dialog.Overlay className="dialog-overlay"/>
                         <Dialog.Content className="dialog-content">
                             <div className="dialog-container">
                                 <Dialog.Close className="absolute z-100 -right-2 -top-2 p-1 bg-red-500 rounded-full hover:bg-red-600">
-                                    <IconX size={24}/>
+                                    <IconX className="size-6"/>
                                 </Dialog.Close>
                                 <Dialog.Title asChild>{children}</Dialog.Title>
                             </div>

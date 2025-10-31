@@ -2,10 +2,10 @@ import React from "react";
 
 
 type Props = {
-    children?: React.ReactNode;
+    children: React.ReactNode;
     className?: string;
-    name?: string;
-    value?: string;
+    name: string;
+    value: string;
 };
 
 const ContactDetailItem: React.FC<Props> = async({children, className, name, value}) => {

@@ -3,7 +3,7 @@ import React from "react";
 
 
 type Props = {
-    children?: React.ReactNode;
+    children: React.ReactNode;
 };
 
 const ServerProviders: React.FC<Props> = ({children}) => {

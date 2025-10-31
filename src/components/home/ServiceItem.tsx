@@ -2,7 +2,7 @@ import React from "react";
 
 
 type Props = {
-    children?: React.ReactNode;
+    children: React.ReactNode;
 };
 
 const ServiceItem: React.FC<Props> = async({children}) => {

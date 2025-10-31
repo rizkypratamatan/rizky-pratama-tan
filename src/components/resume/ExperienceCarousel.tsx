@@ -2,6 +2,7 @@
 
 import ExperienceCarouselItem from "@/components/resume/ExperienceCarouselItem";
 import Button from "@/components/ui/Button";
+import ExperiencesConst from "@/constants/Experiences";
 import {EmblaCarouselType} from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 import React, {useCallback, useEffect, useState} from "react";
@@ -33,10 +34,9 @@ const ExperienceCarousel: React.FC = () => {
     return <div className="embla">
         <div className="embla-viewport" ref={carousel}>
             <div className="embla-container">
-                <ExperienceCarouselItem year="2022 - Present" role="R&D" company="Jakarta Utara, PT Asia Multidana" description="Responsible for creating software and hardware improvements, as well as internal software development."/>
-                <ExperienceCarouselItem year="2019 - 2022" role="Software Engineer" company="Jakarta Utara, PT Asia Multidana" description="Responsible for developing software with HTML5, CSS3, Javascript, PHP, Java, Javascript, React, MySQL, MongoDB."/>
-                <ExperienceCarouselItem year="2016 - 2019" role="Software Engineer" company="Kuala Lumpur, One Solution Soft Sdn Bhd" description="Responsible for developing software with HTML5, CSS3, Javascript, C# .Net and SQL Server."/>
-                <ExperienceCarouselItem year="2011 - 2016" role="Software Engineer" company="Bandung, PT Bestindo Putra Mandiri" description="Responsible for developing software with HTML5, CSS3, Javascript, PHP and MySQL."/>
+                {ExperiencesConst.map((experience, index) => (
+                    <ExperienceCarouselItem key={index} year={experience.year} role={experience.role} company={experience.company} description={experience.description}/>
+                ))}
             </div>
         </div>
         <div className="embla-dots">

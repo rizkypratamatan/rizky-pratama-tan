@@ -8,7 +8,7 @@ import React from "react";
 const Experiences: React.FC = async() => {
     return <section className="flex flex-col gap-4 pt-10">
         <TitleBullet className="w-40" title="Resume">
-            <IconBriefcase size={16}/>
+            <IconBriefcase className="size-4"/>
         </TitleBullet>
         <TitleHeading>Work Experience & Education</TitleHeading>
         <ExperienceCarousel/>

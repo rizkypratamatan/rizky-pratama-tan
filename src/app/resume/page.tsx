@@ -5,7 +5,7 @@ import SoftSkills from "@/components/resume/SoftSkills";
 import Technologies from "@/components/resume/Technologies";
 import Tools from "@/components/resume/Tools";
 import {Metadata} from "next";
-import React from "react";
+import React, {Fragment} from "react";
 
 
 export const metadata: Metadata = {
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
 };
 
 const Resume: React.FC = async() => {
-    return <React.Fragment>
+    return <Fragment>
         <Experiences/>
         <Educations/>
         <Technologies/>
         <Tools/>
         <SoftSkills/>
         <OtherSkills/>
-    </React.Fragment>;
+    </Fragment>;
 };
 
 export default Resume;

@@ -2,15 +2,15 @@ import Bulb from "@/components/Bulb";
 import Header from "@/components/header";
 import Sidebar from "@/components/sidebar";
 import * as ScrollArea from "@radix-ui/react-scroll-area";
-import React from "react";
+import React, {Fragment} from "react";
 
 
 type Props = {
-    children?: React.ReactNode;
+    children: React.ReactNode;
 };
 
 const LayoutProvider: React.FC<Props> = async({children}) => {
-    return <React.Fragment>
+    return <Fragment>
         <Bulb/>
         <div className="relative z-10 h-screen">
             <div className="flex flex-col gap-6 items-start mx-auto xs:max-w-201.25 xs:mx-4 md-l:mx-auto lg:flex-row lg:mx-7.5 lg:max-w-470 3xl:mx-auto">
@@ -32,7 +32,7 @@ const LayoutProvider: React.FC<Props> = async({children}) => {
                 </div>
             </div>
         </div>
-    </React.Fragment>;
+    </Fragment>;
 };
 
 export default LayoutProvider;

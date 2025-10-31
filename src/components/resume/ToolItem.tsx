@@ -2,9 +2,9 @@ import React from "react";
 
 
 type Props = {
-    image?: string;
-    percentage?: number;
-    name?: string;
+    image: string;
+    percentage: number;
+    name: string;
 };
 
 const ToolItem: React.FC<Props> = async({image, percentage, name}) => {
@@ -12,7 +12,7 @@ const ToolItem: React.FC<Props> = async({image, percentage, name}) => {
         <div className="size-18 mx-auto bg-[position:center_38%] bg-[length:40%_40%] bg-no-repeat sm:size-25" style={{backgroundImage: `url('${image}')`}}>
             <svg className="tool-icon" viewBox="0 0 36 36">
                 <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
-                <path style={{strokeDashoffset: (100 - (percentage ?? 0))}} d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                <path style={{strokeDashoffset: (100 - percentage)}} d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
                 <text x="18" y="28">{percentage}%</text>
             </svg>
         </div>

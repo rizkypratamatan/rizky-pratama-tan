@@ -2,8 +2,8 @@ import React from "react";
 
 
 type Props = {
-    count?: string;
-    name?: string;
+    count: string;
+    name: string;
 };
 
 const AchievementItem: React.FC<Props> = async({count, name}) => {

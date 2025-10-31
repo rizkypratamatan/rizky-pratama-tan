@@ -9,7 +9,7 @@ import React, {Context, createContext, useContext, useState} from "react";
 const AppContext: Context<ContextData | undefined> = createContext<ContextData | undefined>(undefined);
 
 type Props = {
-    children?: React.ReactNode;
+    children: React.ReactNode;
 }
 
 export const ContextProvider: React.FC<Props> = ({children}) => {

@@ -2,9 +2,9 @@ import React from "react";
 
 
 type Props = {
-    children?: React.ReactNode;
-    className?: string;
-    title?: string;
+    children: React.ReactNode;
+    className: string;
+    title: string;
 };
 
 const TitleBullet: React.FC<Props> = async({children, className, title}) => {

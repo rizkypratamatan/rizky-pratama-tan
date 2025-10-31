@@ -25,7 +25,7 @@ const Toast: React.FC = () => {
             <div className={`${context?.toast.status === RequestStatus.Success ? 'bg-green-600' : 'bg-red-600'} flex gap-5 px-4 py-2 rounded-lg shadow-lg`}>
                 <RadixToast.Title className="text-sm">{context?.toast.message}</RadixToast.Title>
                 <RadixToast.Action className="ToastAction" altText="Close Toast" aria-label="Close Toast">
-                    <IconX size={16}/>
+                    <IconX className="size-4"/>
                 </RadixToast.Action>
             </div>
         </RadixToast.Root>

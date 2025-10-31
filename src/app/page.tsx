@@ -2,7 +2,7 @@ import Achievements from "@/components/home/Achievements";
 import Headline from "@/components/home/Headline";
 import Services from "@/components/home/Services";
 import {Metadata} from "next";
-import React from "react";
+import React, {Fragment} from "react";
 
 
 export const metadata: Metadata = {
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
 };
 
 const Home: React.FC = async() => {
-    return <React.Fragment>
+    return <Fragment>
         <Headline/>
         <Achievements/>
         <Services/>
-    </React.Fragment>;
+    </Fragment>;
 };
 
 export default Home;

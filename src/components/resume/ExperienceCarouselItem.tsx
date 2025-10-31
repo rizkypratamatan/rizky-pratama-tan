@@ -2,10 +2,10 @@ import React from "react";
 
 
 type Props = {
-    year?: string;
-    role?: string;
-    company?: string;
-    description?: string;
+    year: string;
+    role: string;
+    company: string;
+    description: string;
 };
 
 const ExperienceCarouselItem: React.FC<Props> = ({year, role, company, description}) => {

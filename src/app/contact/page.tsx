@@ -3,7 +3,7 @@ import ContactForm from "@/components/contact/ContactForm";
 import ContactMaps from "@/components/contact/ContactMaps";
 import ClientProviders from "@/providers/clients";
 import {Metadata} from "next";
-import React from "react";
+import React, {Fragment} from "react";
 
 
 export const metadata: Metadata = {
@@ -39,13 +39,13 @@ export const metadata: Metadata = {
 };
 
 const Contact: React.FC = async() => {
-    return <React.Fragment>
+    return <Fragment>
         <ContactDetails/>
         <ContactMaps/>
         <ClientProviders>
             <ContactForm/>
         </ClientProviders>
-    </React.Fragment>;
+    </Fragment>;
 };
 
 export default Contact;

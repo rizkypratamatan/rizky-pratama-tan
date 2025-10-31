@@ -2,9 +2,9 @@ import React from "react";
 
 
 type Props = {
-    children?: React.ReactNode;
-    stack?: string;
-    percentage?: number;
+    children: React.ReactNode;
+    stack: string;
+    percentage: number;
 };
 
 const TechnologyItem: React.FC<Props> = async({children, stack, percentage}) => {
