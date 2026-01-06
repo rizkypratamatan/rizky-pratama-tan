@@ -1,0 +1,35 @@
+import Providers from "@/providers";
+import {NextFontWithVariable} from "next/dist/compiled/@next/font";
+import {Poppins} from "next/font/google";
+import "./globals.css";
+import localFont from "next/font/local";
+import {ReactNode} from "react";
+
+
+const poppins: NextFontWithVariable = Poppins({
+    variable: '--font-poppins',
+    subsets: ['latin'],
+    weight: ['400', '500', '600', '700'],
+    display: 'swap'
+});
+
+const plusJakartaSans: NextFontWithVariable = localFont({
+    variable: '--font-plus-jakarta-sans',
+    src: [
+        {
+            path: '../../public/fonts/plus-jakarta-sans.woff2',
+            weight: '600',
+            style: 'normal'
+        }
+    ],
+    display: 'swap'
+});
+
+
+export default async function RootLayout({children}: Readonly<{ children: ReactNode }>) {
+    return <html lang="en" data-theme="dark">
+    <body className={`${poppins.variable} ${plusJakartaSans.variable} antialiased`}>
+    <Providers>{children}</Providers>
+    </body>
+    </html>;
+}
