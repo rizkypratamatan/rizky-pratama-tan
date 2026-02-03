@@ -1,11 +1,5 @@
-import Education from "@/components/resume/Education";
-import ExperienceContainer from "@/components/resume/ExperienceContainer";
-import OtherSkill from "@/components/resume/OtherSkill";
-import SoftSkill from "@/components/resume/SoftSkill";
-import Technology from "@/components/resume/Technology";
-import Tool from "@/components/resume/Tool";
+import Resume from "@/components/resume";
 import {Metadata} from "next";
-import {Fragment} from "react";
 
 
 export const metadata: Metadata = {
@@ -41,13 +35,6 @@ export const metadata: Metadata = {
 };
 
 
-export default async function Resume() {
-    return <Fragment>
-        <ExperienceContainer/>
-        <Education/>
-        <Technology/>
-        <Tool/>
-        <SoftSkill/>
-        <OtherSkill/>
-    </Fragment>;
+export default async function ResumePage() {
+    return <Resume/>;
 }

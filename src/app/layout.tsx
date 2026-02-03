@@ -7,14 +7,14 @@ import {ReactNode} from "react";
 
 
 const poppins: NextFontWithVariable = Poppins({
-    variable: '--font-poppins',
+    display: 'swap',
     subsets: ['latin'],
-    weight: ['400', '500', '600', '700'],
-    display: 'swap'
+    variable: '--font-poppins',
+    weight: ['400', '500', '600', '700']
 });
 
 const plusJakartaSans: NextFontWithVariable = localFont({
-    variable: '--font-plus-jakarta-sans',
+    display: 'swap',
     src: [
         {
             path: '../../public/fonts/plus-jakarta-sans.woff2',
@@ -22,7 +22,7 @@ const plusJakartaSans: NextFontWithVariable = localFont({
             style: 'normal'
         }
     ],
-    display: 'swap'
+    variable: '--font-plus-jakarta-sans'
 });
 
 

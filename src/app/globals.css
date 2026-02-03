@@ -18,6 +18,8 @@
     --text-200: #fff;
     --text-300: #eaeaea;
     --type-100: #ff4191;
+    --trading-view-candlestick-down: #ef5350;
+    --trading-view-candlestick-up: #26a69a;
 }
 
 @theme inline {
@@ -326,8 +328,16 @@
         @apply flex flex-col gap-3.5 w-full xs:flex-row xs:mt-5 md:basis-110 md:my-4 [@media(min-height:42.625rem)]:md:mt-[calc((100vh-40.125rem)/2)];
     }
 
+    .side-no-profile {
+        @apply w-full xs:mt-5 md:basis-16.5 md:my-4 [@media(min-height:42.625rem)]:md:mt-[calc((100vh-40.125rem)/2)];
+    }
+
     .content {
         @apply overflow-x-auto grow w-full mb-5 bg-background-100 rounded-4xl xs:w-full-menu xs:ml-20 lg:w-auto lg:max-w-[calc(100%-29rem)] lg:max-h-170.5 lg:my-4 [@media(min-height:42.625rem)]:lg:mt-[calc((100vh-40.125rem)/2)] lg:ml-0 lg:rounded-tl-none;
+    }
+
+    .content-no-profile {
+        @apply overflow-x-auto grow w-full mb-5 bg-background-100 rounded-4xl xs:w-full-menu xs:ml-20 lg:w-auto lg:max-w-[calc(100%-4.125rem)] lg:max-h-170.5 lg:my-4 [@media(min-height:42.625rem)]:lg:mt-[calc((100vh-40.125rem)/2)] lg:ml-0 lg:rounded-tl-none;
     }
 
     .scroll-area {

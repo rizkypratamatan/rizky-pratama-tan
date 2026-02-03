@@ -1,5 +1,5 @@
 export default interface BaseResponse {
-    response: string;
+    message: string;
 
-    result: boolean;
+    status: boolean;
 }

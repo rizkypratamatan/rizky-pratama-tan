@@ -1,8 +1,5 @@
-import ContactDetail from "@/components/contact/ContactDetail";
-import ContactFormContainer from "@/components/contact/ContactFormContainer";
-import ContactMap from "@/components/contact/ContactMap";
+import Contact from "@/components/contact";
 import {Metadata} from "next";
-import {Fragment} from "react";
 
 
 export const metadata: Metadata = {
@@ -38,10 +35,6 @@ export const metadata: Metadata = {
 };
 
 
-export default async function Contact() {
-    return <Fragment>
-        <ContactDetail/>
-        <ContactMap/>
-        <ContactFormContainer/>
-    </Fragment>;
+export default async function ContactPage() {
+    return <Contact/>;
 }

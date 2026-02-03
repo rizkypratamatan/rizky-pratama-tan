@@ -1,3 +1,4 @@
+import dataSlice from "@/stores/slices/dataSlice";
 import layoutSlice from "@/stores/slices/layoutSlice";
 import resumeSlice from "@/stores/slices/resumeSlice";
 import {configureStore} from "@reduxjs/toolkit";
@@ -5,6 +6,7 @@ import {configureStore} from "@reduxjs/toolkit";
 
 export const reduxStore = configureStore({
     reducer: {
+        data: dataSlice,
         layout: layoutSlice,
         resume: resumeSlice
     }

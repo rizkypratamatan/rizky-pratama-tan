@@ -16,8 +16,8 @@ export default function useSendMessage() {
         onError: (error: Error) => {
             toast.error(apiError(error).message);
         },
-        onSettled: (data) => {
-            if(data && data.result) {
+        onSuccess: (data) => {
+            if(data && data.status) {
                 toast.success('Your message has been sent successfully.');
             }
         }
